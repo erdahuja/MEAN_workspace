@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting App</title>
+    
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+        <script src="Models/greetfactory.js"></script>
+    <script src="Controllers/greetcontroller.js"></script>
+
+</head>
+<body ng-app="mygreetmodule" ng-controller="greetcontroller" >
+   <table>
+       <tr>
+           <td>
+               <label for="">FirstName:</label>
+               <td><input ng-model="firstName" placeholder="Type first name ..." type="text"></td>
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <label for="">LastName:</label>
+               <td><input ng-model="lastName" placeholder="Type last name..." type="text"></td>
+           </td>
+       </tr>
+       <tr>
+           <td><button ng-click="greet()">Greet</button></td>
+           <td><button ng-click="clear()">Clear</button></td>
+       </tr>
+   </table>
+   <div>{{result}}</div>
+    
+</body>
+</html>

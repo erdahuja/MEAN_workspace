@@ -1,0 +1,38 @@
+[{
+
+        "name": "rishabh",
+        "address": "patel apartments",
+        "mobile": 844,
+        "email": "rk@gmail",
+        "image": "images/first.jpg"
+
+},
+    {
+
+        "name": "ojaswi",
+        "address": "rani bagh",
+        "mobile": 855,
+        "email": "oj@gmail",
+        "image": "images/second.jpg"
+
+},
+    {
+
+        "name": "deepak",
+        "address": "rohini",
+        "mobile": 866,
+        "email": "dk@gmail",
+        "image": "images/third.jpg"
+
+},
+    {
+
+        "name": "aditya",
+        "address": "shakurpur",
+        "mobile": 877,
+        "email": "ad@gmail",
+        "image": "images/fourth.jpg"
+
+}
+
+]

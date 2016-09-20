@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friends App</title>
+    <script src="js/libs/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/model/friendfactory.js"></script>
+    <script src="js/controller/friendscontroller.js"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+
+
+</head>
+
+<body>
+    <script>
+        alert("in html body");
+
+    </script>
+    <div ng-app="myfriendapp" ng-controller="friendscontroller">
+        <h1>Friends are : </h1>
+        <script>
+
+
+        </script>
+        <ul ng-repeat="object in result.data">
+            <div id="box">
+                <li><img ng-src="{{object.image}}" alt="image not loaded">
+                    <p>{{object.image}}</p>
+                    <p>{{object.name}}</p>
+                    <p>{{object.mobile}}</p>
+                    <p>{{object.address}}</p>
+                </li>
+
+            </div>
+
+
+        </ul>
+    </div>
+</body>
+
+</html>
