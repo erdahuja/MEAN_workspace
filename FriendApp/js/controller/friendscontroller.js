@@ -1,4 +1,4 @@
-app.controller("friendscontroller", function ($scope, friendfactory) {
+app.controller("friendscontroller", function ($scope, myfriendfactory) {
     alert("friend controller");
     var promise = friendfactory.callserver($scope);
     promise.then(function (data) {
