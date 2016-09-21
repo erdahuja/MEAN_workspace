@@ -10,3 +10,9 @@ module.controller("mysongcontroller", function ($scope, mysongfactory) {
             $scope.result = error;
         }
 });
+
+module.filter("trustUrl", ['$sce', function ($sce) {
+    return function (recordingUrl) {
+        return $sce.trustAsResourceUrl(recordingUrl);
+    };
+    }]);
