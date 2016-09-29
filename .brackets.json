@@ -1,0 +1,9 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/Deepak/MEAN_workspace/MEAN_workspace/starwars-expressjsapp/index.js",
+        "/Users/Deepak/MEAN_workspace/MEAN_workspace/SaavnReplica/js/models/songfactory.js",
+        "/Users/Deepak/MEAN_workspace/MEAN_workspace/SaavnReplica/js/libs/angular.min.js",
+        "/Users/Deepak/MEAN_workspace/MEAN_workspace/Gmail Clone/factories/factory.js",
+        "/Users/Deepak/MEAN_workspace/MEAN_workspace/SaavnReplica/js/controller/mysongcontroller.js"
+    ]
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myGmailClone">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gmail Clone</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/jquery-3.1.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script src="config.js"></script>
+    <script src="factories/factory.js"></script>
+    <script src="controllers/controller.js"></script>
+    <script src="directives/InboxDrctv.js"></script>
+    <script src="directives/EmailDrctv.js"></script>
+    <script src="libs/angular-sanitize-v1.2.22.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="header" role="banner">
+        <p>Gmail Clone</p>
+        <div class="header__text">
+            By Deepak Ahuja
+        </div>
+    </header>
+
+    <main class="main" role="main">
+        <div ng-view class="flex">
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

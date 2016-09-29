@@ -16,3 +16,4 @@ module.filter("trustUrl", ['$sce', function ($sce) {
         return $sce.trustAsResourceUrl(recordingUrl);
     };
     }]);
+

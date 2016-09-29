@@ -1,0 +1,474 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/package.json
+5 warn package.json expresstests@1.0.0 No description
+6 warn package.json expresstests@1.0.0 No repository field.
+7 warn package.json expresstests@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express/package.json
+9 verbose readDependencies loading dependencies from /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/package.json
+10 verbose install express is installed as 4.14.0
+11 silly cache add args [ 'express@^4.14.0', null ]
+12 verbose cache add spec express@^4.14.0
+13 silly cache add parsed spec Result {
+13 silly cache add   raw: 'express@^4.14.0',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'express',
+13 silly cache add   rawSpec: '^4.14.0',
+13 silly cache add   spec: '>=4.14.0 <5.0.0',
+13 silly cache add   type: 'range' }
+14 silly addNamed express@>=4.14.0 <5.0.0
+15 verbose addNamed ">=4.14.0 <5.0.0" is a valid semver range for express
+16 silly addNameRange { name: 'express', range: '>=4.14.0 <5.0.0', hasData: false }
+17 silly mapToRegistry name express
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'express',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   name: 'express',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri https://registry.npmjs.org/express
+22 verbose addNameRange registry:https://registry.npmjs.org/express not in flight; fetching
+23 verbose request uri https://registry.npmjs.org/express
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 9:25:15 AM
+26 verbose request using bearer token for auth
+27 verbose request id 55b3383df2471cfa
+28 verbose etag "ESCVJ9F6P7CL0SI9R3KY31667"
+29 http request GET https://registry.npmjs.org/express
+30 http 200 https://registry.npmjs.org/express
+31 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   etag: '"2XPE2YSSVZVAK4ZTXPP1S42WN"',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'content-encoding': 'gzip',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'transfer-encoding': 'chunked',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Wed, 28 Sep 2016 03:55:28 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1475034927.033696,VS0,VE1201',
+31 verbose headers   vary: 'Accept-Encoding' }
+32 silly get cb [ 200,
+32 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 silly get     etag: '"2XPE2YSSVZVAK4ZTXPP1S42WN"',
+32 silly get     'content-type': 'application/json',
+32 silly get     'content-encoding': 'gzip',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'transfer-encoding': 'chunked',
+32 silly get     'accept-ranges': 'bytes',
+32 silly get     date: 'Wed, 28 Sep 2016 03:55:28 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-sin6922-SIN',
+32 silly get     'x-cache': 'MISS',
+32 silly get     'x-cache-hits': '0',
+32 silly get     'x-timer': 'S1475034927.033696,VS0,VE1201',
+32 silly get     vary: 'Accept-Encoding' } ]
+33 verbose get saving express to /Users/Deepak/.npm/registry.npmjs.org/express/.cache.json
+34 verbose correctMkdir /Users/Deepak/.npm correctMkdir not in flight; initializing
+35 silly addNameRange number 2 { name: 'express', range: '>=4.14.0 <5.0.0', hasData: true }
+36 silly addNameRange versions [ 'express',
+36 silly addNameRange   [ '0.14.0',
+36 silly addNameRange     '0.14.1',
+36 silly addNameRange     '1.0.0',
+36 silly addNameRange     '1.0.1',
+36 silly addNameRange     '1.0.2',
+36 silly addNameRange     '1.0.3',
+36 silly addNameRange     '1.0.4',
+36 silly addNameRange     '1.0.5',
+36 silly addNameRange     '1.0.6',
+36 silly addNameRange     '1.0.7',
+36 silly addNameRange     '1.0.8',
+36 silly addNameRange     '2.0.0',
+36 silly addNameRange     '2.1.0',
+36 silly addNameRange     '2.1.1',
+36 silly addNameRange     '2.2.0',
+36 silly addNameRange     '2.2.1',
+36 silly addNameRange     '2.2.2',
+36 silly addNameRange     '2.3.0',
+36 silly addNameRange     '2.3.1',
+36 silly addNameRange     '2.3.2',
+36 silly addNameRange     '2.3.3',
+36 silly addNameRange     '2.3.4',
+36 silly addNameRange     '2.3.5',
+36 silly addNameRange     '2.3.6',
+36 silly addNameRange     '2.3.7',
+36 silly addNameRange     '2.3.8',
+36 silly addNameRange     '2.3.9',
+36 silly addNameRange     '2.3.10',
+36 silly addNameRange     '2.3.11',
+36 silly addNameRange     '2.3.12',
+36 silly addNameRange     '2.4.0',
+36 silly addNameRange     '2.4.1',
+36 silly addNameRange     '2.4.2',
+36 silly addNameRange     '2.4.3',
+36 silly addNameRange     '2.4.4',
+36 silly addNameRange     '2.4.5',
+36 silly addNameRange     '2.4.6',
+36 silly addNameRange     '2.4.7',
+36 silly addNameRange     '2.5.0',
+36 silly addNameRange     '2.5.1',
+36 silly addNameRange     '2.5.2',
+36 silly addNameRange     '2.5.3',
+36 silly addNameRange     '2.5.4',
+36 silly addNameRange     '2.5.5',
+36 silly addNameRange     '2.5.6',
+36 silly addNameRange     '2.5.7',
+36 silly addNameRange     '2.5.8',
+36 silly addNameRange     '2.5.9',
+36 silly addNameRange     '2.5.10',
+36 silly addNameRange     '2.5.11',
+36 silly addNameRange     '3.0.0',
+36 silly addNameRange     '3.0.1',
+36 silly addNameRange     '3.0.2',
+36 silly addNameRange     '3.0.3',
+36 silly addNameRange     '3.0.4',
+36 silly addNameRange     '3.0.5',
+36 silly addNameRange     '3.0.6',
+36 silly addNameRange     '3.1.0',
+36 silly addNameRange     '3.1.1',
+36 silly addNameRange     '3.1.2',
+36 silly addNameRange     '3.2.0',
+36 silly addNameRange     '3.2.1',
+36 silly addNameRange     '3.2.2',
+36 silly addNameRange     '3.2.3',
+36 silly addNameRange     '3.2.4',
+36 silly addNameRange     '3.2.5',
+36 silly addNameRange     '3.2.6',
+36 silly addNameRange     '3.3.0',
+36 silly addNameRange     '3.3.1',
+36 silly addNameRange     '3.3.2',
+36 silly addNameRange     '3.3.3',
+36 silly addNameRange     '3.3.4',
+36 silly addNameRange     '3.3.5',
+36 silly addNameRange     '3.3.6',
+36 silly addNameRange     '1.0.0-beta',
+36 silly addNameRange     '1.0.0-beta2',
+36 silly addNameRange     '1.0.0-rc',
+36 silly addNameRange     '1.0.0-rc2',
+36 silly addNameRange     '1.0.0-rc3',
+36 silly addNameRange     '1.0.0-rc4',
+36 silly addNameRange     '2.0.0-beta',
+36 silly addNameRange     '2.0.0-beta2',
+36 silly addNameRange     '2.0.0-beta3',
+36 silly addNameRange     '2.0.0-rc',
+36 silly addNameRange     '2.0.0-rc2',
+36 silly addNameRange     '2.0.0-rc3',
+36 silly addNameRange     '3.0.0-alpha1',
+36 silly addNameRange     '3.0.0-alpha2',
+36 silly addNameRange     '3.0.0-alpha3',
+36 silly addNameRange     '3.0.0-alpha4',
+36 silly addNameRange     '3.0.0-alpha5',
+36 silly addNameRange     '3.0.0-beta1',
+36 silly addNameRange     '3.0.0-beta2',
+36 silly addNameRange     '3.0.0-beta3',
+36 silly addNameRange     '3.0.0-beta4',
+36 silly addNameRange     '3.0.0-beta6',
+36 silly addNameRange     '3.0.0-beta7',
+36 silly addNameRange     '3.0.0-rc1',
+36 silly addNameRange     '3.0.0-rc2',
+36 silly addNameRange     '3.0.0-rc3',
+36 silly addNameRange     '3.0.0-rc4',
+36 silly addNameRange     '3.0.0-rc5',
+36 silly addNameRange     '3.3.7',
+36 silly addNameRange     '3.3.8',
+36 silly addNameRange     '3.4.0',
+36 silly addNameRange     '3.4.1',
+36 silly addNameRange     '3.4.2',
+36 silly addNameRange     '3.4.3',
+36 silly addNameRange     '3.4.4',
+36 silly addNameRange     '3.4.5',
+36 silly addNameRange     '3.4.6',
+36 silly addNameRange     '3.4.7',
+36 silly addNameRange     '3.4.8',
+36 silly addNameRange     '4.0.0-rc1',
+36 silly addNameRange     '4.0.0-rc2',
+36 silly addNameRange     '3.5.0',
+36 silly addNameRange     '4.0.0-rc3',
+36 silly addNameRange     '4.0.0-rc4',
+36 silly addNameRange     '3.5.1',
+36 silly addNameRange     '4.0.0',
+36 silly addNameRange     '3.5.2',
+36 silly addNameRange     '4.1.0',
+36 silly addNameRange     '4.1.1',
+36 silly addNameRange     '3.5.3',
+36 silly addNameRange     '4.1.2',
+36 silly addNameRange     '3.6.0',
+36 silly addNameRange     '4.2.0',
+36 silly addNameRange     '3.7.0',
+36 silly addNameRange     '3.8.0',
+36 silly addNameRange     '4.3.0',
+36 silly addNameRange     '4.3.1',
+36 silly addNameRange     '3.8.1',
+36 silly addNameRange     '4.3.2',
+36 silly addNameRange     '3.9.0',
+36 silly addNameRange     '4.4.0',
+36 silly addNameRange     '4.4.1',
+36 silly addNameRange     '3.10.0',
+36 silly addNameRange     '3.10.1',
+36 silly addNameRange     '3.10.2',
+36 silly addNameRange     '3.10.3',
+36 silly addNameRange     '3.10.4',
+36 silly addNameRange     '4.4.2',
+36 silly addNameRange     '3.10.5',
+36 silly addNameRange     '4.4.3',
+36 silly addNameRange     '3.11.0',
+36 silly addNameRange     '4.4.4',
+36 silly addNameRange     '3.12.0',
+36 silly addNameRange     '3.12.1',
+36 silly addNameRange     '4.4.5',
+36 silly addNameRange     '3.13.0',
+36 silly addNameRange     '4.5.0',
+36 silly addNameRange     '4.5.1',
+36 silly addNameRange     '3.14.0',
+36 silly addNameRange     '4.6.0',
+36 silly addNameRange     '4.6.1',
+36 silly addNameRange     '3.15.0',
+36 silly addNameRange     '4.7.0',
+36 silly addNameRange     '3.15.1',
+36 silly addNameRange     '4.7.1',
+36 silly addNameRange     '3.15.2',
+36 silly addNameRange     '4.7.2',
+36 silly addNameRange     '4.7.3',
+36 silly addNameRange     '3.15.3',
+36 silly addNameRange     '4.7.4',
+36 silly addNameRange     '3.16.0',
+36 silly addNameRange     '4.8.0',
+36 silly addNameRange     '3.16.1',
+36 silly addNameRange     '4.8.1',
+36 silly addNameRange     '3.16.2',
+36 silly addNameRange     '4.8.2',
+36 silly addNameRange     '3.16.3',
+36 silly addNameRange     '3.16.4',
+36 silly addNameRange     '4.8.3',
+36 silly addNameRange     '3.16.5',
+36 silly addNameRange     '3.16.6',
+36 silly addNameRange     '4.8.4',
+36 silly addNameRange     '3.16.7',
+36 silly addNameRange     '4.8.5',
+36 silly addNameRange     '3.16.8',
+36 silly addNameRange     '4.8.6',
+36 silly addNameRange     '3.16.9',
+36 silly addNameRange     '4.8.7',
+36 silly addNameRange     '3.16.10',
+36 silly addNameRange     '4.8.8',
+36 silly addNameRange     '3.17.0',
+36 silly addNameRange     '3.17.1',
+36 silly addNameRange     '4.9.0',
+36 silly addNameRange     '3.17.2',
+36 silly addNameRange     '4.9.1',
+36 silly addNameRange     '4.9.2',
+36 silly addNameRange     '3.17.3',
+36 silly addNameRange     '4.9.3',
+36 silly addNameRange     '3.17.4',
+36 silly addNameRange     '4.9.4',
+36 silly addNameRange     '3.17.5',
+36 silly addNameRange     '4.9.5',
+36 silly addNameRange     '3.17.6',
+36 silly addNameRange     '3.17.7',
+36 silly addNameRange     '4.9.6',
+36 silly addNameRange     '4.9.7',
+36 silly addNameRange     '3.17.8',
+36 silly addNameRange     '4.9.8',
+36 silly addNameRange     '3.18.0',
+36 silly addNameRange     '3.18.1',
+36 silly addNameRange     '4.10.0',
+36 silly addNameRange     '3.18.2',
+36 silly addNameRange     '4.10.1',
+36 silly addNameRange     '5.0.0-alpha.1',
+36 silly addNameRange     '3.18.3',
+36 silly addNameRange     '4.10.2',
+36 silly addNameRange     '3.18.4',
+36 silly addNameRange     '4.10.3',
+36 silly addNameRange     '4.10.4',
+36 silly addNameRange     '4.10.5',
+36 silly addNameRange     '3.18.5',
+36 silly addNameRange     '3.18.6',
+36 silly addNameRange     '4.10.6',
+36 silly addNameRange     '4.10.7',
+36 silly addNameRange     '3.19.0',
+36 silly addNameRange     '4.10.8',
+36 silly addNameRange     '4.11.0',
+36 silly addNameRange     '3.19.1',
+36 silly addNameRange     '4.11.1',
+36 silly addNameRange     '3.19.2',
+36 silly addNameRange     '4.11.2',
+36 silly addNameRange     '3.20.0',
+36 silly addNameRange     '4.12.0',
+36 silly addNameRange     '3.20.1',
+36 silly addNameRange     '4.12.1',
+36 silly addNameRange     '4.12.2',
+36 silly addNameRange     '3.20.2',
+36 silly addNameRange     '4.12.3',
+36 silly addNameRange     '3.20.3',
+36 silly addNameRange     '4.12.4',
+36 silly addNameRange     '3.21.0',
+36 silly addNameRange     '4.13.0',
+36 silly addNameRange     '3.21.1',
+36 silly addNameRange     '4.13.1',
+36 silly addNameRange     '5.0.0-alpha.2',
+36 silly addNameRange     '3.21.2',
+36 silly addNameRange     '4.13.2',
+36 silly addNameRange     '4.13.3',
+36 silly addNameRange     '4.13.4',
+36 silly addNameRange     '4.14.0' ] ]
+37 silly addNamed express@4.14.0
+38 verbose addNamed "4.14.0" is a plain semver version for express
+39 silly cache afterAdd express@4.14.0
+40 verbose afterAdd /Users/Deepak/.npm/express/4.14.0/package/package.json not in flight; writing
+41 verbose correctMkdir /Users/Deepak/.npm correctMkdir not in flight; initializing
+42 verbose afterAdd /Users/Deepak/.npm/express/4.14.0/package/package.json written
+43 silly install resolved [ { name: 'express',
+43 silly install resolved     description: 'Fast, unopinionated, minimalist web framework',
+43 silly install resolved     version: '4.14.0',
+43 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+43 silly install resolved     contributors:
+43 silly install resolved      [ [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object] ],
+43 silly install resolved     license: 'MIT',
+43 silly install resolved     repository:
+43 silly install resolved      { type: 'git',
+43 silly install resolved        url: 'git+https://github.com/expressjs/express.git' },
+43 silly install resolved     homepage: 'http://expressjs.com/',
+43 silly install resolved     keywords:
+43 silly install resolved      [ 'express',
+43 silly install resolved        'framework',
+43 silly install resolved        'sinatra',
+43 silly install resolved        'web',
+43 silly install resolved        'rest',
+43 silly install resolved        'restful',
+43 silly install resolved        'router',
+43 silly install resolved        'app',
+43 silly install resolved        'api' ],
+43 silly install resolved     dependencies:
+43 silly install resolved      { accepts: '~1.3.3',
+43 silly install resolved        'array-flatten': '1.1.1',
+43 silly install resolved        'content-disposition': '0.5.1',
+43 silly install resolved        'content-type': '~1.0.2',
+43 silly install resolved        cookie: '0.3.1',
+43 silly install resolved        'cookie-signature': '1.0.6',
+43 silly install resolved        debug: '~2.2.0',
+43 silly install resolved        depd: '~1.1.0',
+43 silly install resolved        encodeurl: '~1.0.1',
+43 silly install resolved        'escape-html': '~1.0.3',
+43 silly install resolved        etag: '~1.7.0',
+43 silly install resolved        finalhandler: '0.5.0',
+43 silly install resolved        fresh: '0.3.0',
+43 silly install resolved        'merge-descriptors': '1.0.1',
+43 silly install resolved        methods: '~1.1.2',
+43 silly install resolved        'on-finished': '~2.3.0',
+43 silly install resolved        parseurl: '~1.3.1',
+43 silly install resolved        'path-to-regexp': '0.1.7',
+43 silly install resolved        'proxy-addr': '~1.1.2',
+43 silly install resolved        qs: '6.2.0',
+43 silly install resolved        'range-parser': '~1.2.0',
+43 silly install resolved        send: '0.14.1',
+43 silly install resolved        'serve-static': '~1.11.1',
+43 silly install resolved        'type-is': '~1.6.13',
+43 silly install resolved        'utils-merge': '1.0.0',
+43 silly install resolved        vary: '~1.1.0' },
+43 silly install resolved     devDependencies:
+43 silly install resolved      { after: '0.8.1',
+43 silly install resolved        'body-parser': '~1.15.1',
+43 silly install resolved        'cookie-parser': '~1.4.3',
+43 silly install resolved        ejs: '2.4.2',
+43 silly install resolved        istanbul: '0.4.3',
+43 silly install resolved        marked: '0.3.5',
+43 silly install resolved        'method-override': '~2.3.6',
+43 silly install resolved        mocha: '2.5.3',
+43 silly install resolved        morgan: '~1.7.0',
+43 silly install resolved        should: '9.0.2',
+43 silly install resolved        supertest: '1.2.0',
+43 silly install resolved        'connect-redis': '~2.4.1',
+43 silly install resolved        'cookie-session': '~1.2.0',
+43 silly install resolved        'express-session': '~1.13.0',
+43 silly install resolved        jade: '~1.11.0',
+43 silly install resolved        multiparty: '~4.1.2',
+43 silly install resolved        vhost: '~3.0.2' },
+43 silly install resolved     engines: { node: '>= 0.10.0' },
+43 silly install resolved     files: [ 'LICENSE', 'History.md', 'Readme.md', 'index.js', 'lib/' ],
+43 silly install resolved     scripts:
+43 silly install resolved      { test: 'mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/',
+43 silly install resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/',
+43 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/',
+43 silly install resolved        'test-tap': 'mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/' },
+43 silly install resolved     gitHead: '9375a9afa9d7baa814b454c7a6818a7471aaef00',
+43 silly install resolved     bugs: { url: 'https://github.com/expressjs/express/issues' },
+43 silly install resolved     _id: 'express@4.14.0',
+43 silly install resolved     _shasum: 'c1ee3f42cdc891fb3dc650a8922d51ec847d0d66',
+43 silly install resolved     _from: 'express@>=4.14.0 <5.0.0',
+43 silly install resolved     _npmVersion: '1.4.28',
+43 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+43 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+43 silly install resolved     dist:
+43 silly install resolved      { shasum: 'c1ee3f42cdc891fb3dc650a8922d51ec847d0d66',
+43 silly install resolved        tarball: 'https://registry.npmjs.org/express/-/express-4.14.0.tgz' },
+43 silly install resolved     _npmOperationalInternal:
+43 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+43 silly install resolved        tmp: 'tmp/express-4.14.0.tgz_1466095407850_0.17484632693231106' },
+43 silly install resolved     directories: {},
+43 silly install resolved     _resolved: 'https://registry.npmjs.org/express/-/express-4.14.0.tgz',
+43 silly install resolved     readme: 'ERROR: No README data found!' } ]
+44 info install express@4.14.0 into /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests
+45 info installOne express@4.14.0
+46 verbose installOne of express to /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests not in flight; installing
+47 verbose correctMkdir /Users/Deepak/.npm/_locks correctMkdir not in flight; initializing
+48 verbose lock using /Users/Deepak/.npm/_locks/express-7b858be92fb57552.lock for /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express
+49 silly install write writing express 4.14.0 to /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express
+50 verbose unbuild node_modules/express
+51 info preuninstall express@4.14.0
+52 info uninstall express@4.14.0
+53 verbose unbuild rmStuff express@4.14.0 from /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules
+54 info postuninstall express@4.14.0
+55 silly gentlyRm /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express is being purged from base /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests
+56 verbose gentlyRm don't care about contents; nuking /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express
+57 silly vacuum-fs purging /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express
+58 verbose unlock done using /Users/Deepak/.npm/_locks/express-7b858be92fb57552.lock for /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express
+59 verbose stack Error: EACCES: permission denied, unlink '/Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express/node_modules/send/node_modules/.bin/mime'
+59 verbose stack     at Error (native)
+60 verbose cwd /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests
+61 error Darwin 16.0.0
+62 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "express" "--save"
+63 error node v4.5.0
+64 error npm  v2.15.9
+65 error path /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express/node_modules/send/node_modules/.bin/mime
+66 error code EACCES
+67 error errno -13
+68 error syscall unlink
+69 error Error: EACCES: permission denied, unlink '/Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express/node_modules/send/node_modules/.bin/mime'
+69 error     at Error (native)
+69 error  { [Error: EACCES: permission denied, unlink '/Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express/node_modules/send/node_modules/.bin/mime']
+69 error   errno: -13,
+69 error   code: 'EACCES',
+69 error   syscall: 'unlink',
+69 error   path: '/Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express/node_modules/send/node_modules/.bin/mime' }
+70 error Please try running this command again as root/Administrator.
+71 verbose exit [ -13, true ]
+72 verbose unbuild node_modules/express
+73 silly gentlyRm /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express is being purged from base /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests
+74 verbose gentlyRm don't care about contents; nuking /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express
+75 silly vacuum-fs purging /Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express
+76 error error rolling back Error: EACCES: permission denied, unlink '/Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express/node_modules/send/node_modules/.bin/mime'
+76 error error rolling back     at Error (native)
+76 error error rolling back  { [Error: EACCES: permission denied, unlink '/Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express/node_modules/send/node_modules/.bin/mime']
+76 error error rolling back   errno: -13,
+76 error error rolling back   code: 'EACCES',
+76 error error rolling back   syscall: 'unlink',
+76 error error rolling back   path: '/Users/Deepak/MEAN_workspace/MEAN_workspace/expresstests/node_modules/express/node_modules/send/node_modules/.bin/mime' }

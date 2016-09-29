@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Sharing</title>
+    <script src="angular.min.js"></script>
+    <script>
+        var app2 = angular.module("myapp2", []);
+        var app = angular.module("myapp", ["myapp2"]); //module injection for sharing data among different moodules.
+        app2.factory("app2factory", function() {
+            var obj = {
+                age: 21
+            };
+            return obj;
+
+        });
+        app.controller("myctrl1", function($scope, $rootScope, myfactory, app2factory) {
+            $scope.message = "helo from ctrl1";
+            myfactory.lastname = "tyson ";
+            $scope.msg1 = myfactory.name + " " + myfactory.lastname + " age " + app2factory.age;
+
+        });
+
+        app.controller("myctrl2", function($scope, myfactory) {
+            $scope.message2 = "hello from ctrl2";
+            $scope.msg1 = myfactory.name + " " + myfactory.lastname;
+
+        });
+
+        app.controller("myctrl3", function($scope, myfactory) {
+            $scope.message2 = "hello from ctrl3";
+            $scope.msg1 = myfactory.name + " " + myfactory.lastname;
+
+        });
+        app.factory("myfactory", function() {
+            var object = {};
+            object.name = "Mike ";
+            return object;
+
+        });
+
+    </script>
+</head>
+
+<body ng-app="myapp">
+    //inheritance for scope sharing.one div inside other.
+    <div ng-controller="myctrl1">{{message}} {{msg1}}
+        <div ng-controller="myctrl2">{{message2}} {{msg1}}</div>
+
+    </div>
+
+    <!--/*2nd method is to use $rootscope whic has scope at module(app) level.*/-->
+    <div ng-controller="myctrl3">{{message3}} {{msg1}}
+    </div>
+
+
+</body>
+
+</html>
