@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <script src="../libs/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="factory.js"></script>
+    <script src="controller.js"></script>
+</head>
+
+<body ng-app="loginapp" ng-controller="logincontroller">
+
+    <h1>Login here </h1>
+
+    <input type="text" ng-model="userid">
+
+    <input type="password" ng-model="password">
+
+    <button type="submit" ng-click="checkLogin()">Login</button>
+
+    {{result}}
+
+
+
+</body>
+
+</html>

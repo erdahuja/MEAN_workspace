@@ -1,5 +1,5 @@
 app.factory("friendfactory", function ($http, $q) {
-alert("in factory");
+//alert("in factory");
 
     var object = {
         //bad approach, scope tightly couples with view.
